@@ -1,5 +1,5 @@
 ## These two functions together will give the inverse of an invertible 
-## square matrix. If there already exists the inverse matrix in the 
+## square matrix. If there already exists the inverse in the 
 ## environment then it will give the result directlywithout going through 
 ## the computation
 
