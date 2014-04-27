@@ -1,11 +1,9 @@
-## These two functions together will give the inverse of an invertible 
-## square matrix. If there already exists the inverse in the 
-## environment then it will give the result directlywithout going through 
-## the computation
+## These two functions together will give the inverse of an invertible square matrix. 
+## If there already exists the inverse in the environment then it will give the result directly without going through 
+## the computation.
 
 
-## This function creates a special "matrix" object that returns a list of
-## functions which can cache its inverse.
+## This function creates a special "matrix" object that returns a list of functions which can cache its inverse.
 makeCacheMatrix <- function(x = matrix()) {
   inver <- NULL  ## inverse matrix
   ## Change matrix
@@ -25,10 +23,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## This function computes the inverse of the special "matrix" returned by 
-## makeCacheMatrix above. 
-## If the inverse has already been calculated (and the matrix has not 
-## changed), then the cachesolve should retrieve the inverse from the cache.
+## This function computes the inverse of the special "matrix" returned by makeCacheMatrix above. 
+## If the inverse has already been calculated (and the matrix has not changed), 
+## then the cacheSolve function should retrieve the inverse from the cache.
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
   inver <- x$getinv()
